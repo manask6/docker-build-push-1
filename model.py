@@ -49,7 +49,7 @@ class KFServingSampleModel(kfserving.KFModel):
         #data2 = json_data["signatures"]["inputs"][0][0]["data2"]
         #writing the inp image
         #b64_filewriter(filename, data)
-        ct_scan, origin, spacing = load_itk('images/original_sub.mhd')
+        #ct_scan, origin, spacing = load_itk('images/original_sub.mhd')
         
         with open('images/AMRD14-segmentation.jpeg', 'rb') as open_file:
             byte_content = open_file.read()
